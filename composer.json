@@ -1,0 +1,18 @@
+{
+  "license": "MIT",
+  "name": "olegopro/imapconnector",
+  "autoload": {
+    "psr-4" : {
+      "olegopro\\ImapConnector\\" : "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "olegopro",
+      "email": "evilgazz@gmail.com"
+    }
+  ],
+  "require": {
+    "zbateson/mail-mime-parser": "*"
+  }
+}
