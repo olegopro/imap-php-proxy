@@ -1,9 +1,9 @@
 <?php
 
-namespace olegopro\ImapConnector\Parsers;
+namespace ImapConnector\Parsers;
 
-use olegopro\ImapConnector\Builders\MailBuilder;
-use olegopro\ImapConnector\Builders\MailBuilderInterface;
+use ImapConnector\Builders\MailBuilder;
+use ImapConnector\Builders\MailBuilderInterface;
 use \ZBateson\MailMimeParser\MailMimeParser;
 
 class Parser extends MailMimeParser implements ParserInterface

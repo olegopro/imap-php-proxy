@@ -1,6 +1,6 @@
 <?php
 
-namespace olegopro\ImapConnector\Mails;
+namespace ImapConnector\Mails;
 
 use Interceptor\Interfaces\AccountInterface;
 

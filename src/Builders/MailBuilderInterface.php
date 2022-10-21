@@ -1,5 +1,5 @@
 <?php
-namespace olegopro\ImapConnector\Builders;
+namespace ImapConnector\Builders;
 
 interface MailBuilderInterface
 {

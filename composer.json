@@ -3,7 +3,7 @@
   "name": "olegopro/imap-php-proxy",
   "autoload": {
     "psr-4" : {
-      "olegopro\\ImapConnector\\" : "src/"
+      "ImapConnector\\" : "src/"
     }
   },
   "authors": [

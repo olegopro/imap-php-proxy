@@ -1,6 +1,6 @@
 <?php
 
-namespace olegopro\ImapConnector\Mails;
+namespace ImapConnector\Mails;
 
 class Mail implements MailInterface
 {

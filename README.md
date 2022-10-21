@@ -25,7 +25,7 @@
         }
     ],
     "require": {
-        "olegopro/imapconnector": "dev-master"
+        "olegopro/imap-php-proxy": "dev-master"
     }
 ```
 
@@ -33,15 +33,15 @@
 
 ```php
 // Этот объект содержит все успешные и ошибочные действия
-$responseContainer = \olegopro\ImapConnector\Containers\ResponseContainer::getInstance();
+$responseContainer = \ImapConnector\Containers\ResponseContainer::getInstance();
 
-$connector = new \olegopro\ImapConnector\Connector($responseContainer);
+$connector = new \ImapConnector\Connector($responseContainer);
 
 // Этот объект предназначен для разбора ответа imap 
-$parser = new \olegopro\ImapConnector\Parsers\Parser();
+$parser = new \ImapConnector\Parsers\Parser();
 
 // Экземпляр прокси Socks 5
-$socks5Proxy = new \olegopro\ImapConnector\Proxies\Socks5Proxy($responseContainer, "ip", 'port');
+$socks5Proxy = new \ImapConnector\Proxies\Socks5Proxy($responseContainer, "ip", 'port');
 
 // Подключение к прокси (если вы пропустите эту строку, скрипт будет подключаться к imap напрямую, без прокси)
 $connector->connectToProxy($socks5Proxy);
@@ -53,7 +53,7 @@ $stream = $connector->connectToImap("imap_host", 'imap_port');
 if(is_resource($stream)) {
 
     // Здесь мы создаем обработчик комманд и передаем поток
-    $commander = new \olegopro\ImapConnector\Commander($stream, $parser, $responseContainer);
+    $commander = new \ImapConnector\Commander($stream, $parser, $responseContainer);
 
     // Вход через imap
     if($commander->login("login", "password")){

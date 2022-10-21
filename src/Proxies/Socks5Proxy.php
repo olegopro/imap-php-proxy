@@ -1,6 +1,6 @@
 <?php
 
-namespace olegopro\ImapConnector\Proxies;
+namespace ImapConnector\Proxies;
 
 class Socks5Proxy extends AbstractProxy
 {

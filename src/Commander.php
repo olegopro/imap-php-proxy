@@ -1,13 +1,13 @@
 <?php
 
-namespace olegopro\ImapConnector;
+namespace ImapConnector;
 
 use Horde\Socket\ImapClient;
-use olegopro\ImapConnector\Mails\Mail;
-use olegopro\ImapConnector\Parsers\ParserInterface;
-use olegopro\ImapConnector\Parsers\Parser;
-use olegopro\ImapConnector\Containers\ResponseContainerInterface;
-use olegopro\ImapConnector\Containers\ResponseContainer;
+use ImapConnector\Mails\Mail;
+use ImapConnector\Parsers\ParserInterface;
+use ImapConnector\Parsers\Parser;
+use ImapConnector\Containers\ResponseContainerInterface;
+use ImapConnector\Containers\ResponseContainer;
 
 class Commander
 {

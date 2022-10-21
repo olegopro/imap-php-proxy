@@ -1,10 +1,10 @@
 <?php
 
-namespace olegopro\ImapConnector;
+namespace ImapConnector;
 
-use olegopro\ImapConnector\Containers\ResponseContainerInterface;
-use olegopro\ImapConnector\Proxies\ProxyInterface;
-use olegopro\ImapConnector\Containers\ResponseContainer;
+use ImapConnector\Containers\ResponseContainerInterface;
+use ImapConnector\Proxies\ProxyInterface;
+use ImapConnector\Containers\ResponseContainer;
 
 class Connector
 {

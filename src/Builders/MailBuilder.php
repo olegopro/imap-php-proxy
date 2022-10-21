@@ -1,9 +1,9 @@
 <?php
 
-namespace olegopro\ImapConnector\Builders;
+namespace ImapConnector\Builders;
 
-use olegopro\ImapConnector\Mails\Mail;
-use olegopro\ImapConnector\Mails\MailInterface;
+use ImapConnector\Mails\Mail;
+use ImapConnector\Mails\MailInterface;
 use \ZBateson\MailMimeParser\Message;
 
 class MailBuilder implements MailBuilderInterface

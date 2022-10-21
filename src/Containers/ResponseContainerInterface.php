@@ -1,6 +1,6 @@
 <?php
 
-namespace olegopro\ImapConnector\Containers;
+namespace ImapConnector\Containers;
 
 interface ResponseContainerInterface
 {

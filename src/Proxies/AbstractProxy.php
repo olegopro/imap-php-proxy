@@ -1,9 +1,9 @@
 <?php
 
-namespace olegopro\ImapConnector\Proxies;
+namespace ImapConnector\Proxies;
 
-use olegopro\ImapConnector\Containers\ResponseContainerInterface;
-use olegopro\ImapConnector\Containers\ResponseContainer;
+use ImapConnector\Containers\ResponseContainerInterface;
+use ImapConnector\Containers\ResponseContainer;
 
 abstract class AbstractProxy implements ProxyInterface
 {

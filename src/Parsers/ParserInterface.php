@@ -1,6 +1,6 @@
 <?php
 
-namespace olegopro\ImapConnector\Parsers;
+namespace ImapConnector\Parsers;
 
 interface ParserInterface {
 
