@@ -20,6 +20,8 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/olegopro/imap-php-proxy.git"
+           
         }
     ],
     "require": {

@@ -1,6 +1,6 @@
 {
   "license": "MIT",
-  "name": "olegopro/imapconnector",
+  "name": "olegopro/imap-php-proxy",
   "autoload": {
     "psr-4" : {
       "olegopro\\ImapConnector\\" : "src/"
