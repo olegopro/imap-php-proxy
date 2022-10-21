@@ -5,12 +5,8 @@
 Достоинства:
 * Модуль очень гибкий, вы можете заменить любой элемент на свой собственный (ResponseContainer, Parser, Commander, реализовать свои собственные типы прокси).
 реализовать свои собственные типы прокси).
-* Уже реализованы Socks5 и Https прокси.
-
-Ограничения
-* Необходимо реализовать авторизацию через прокси-сервер
-* Parser, Commander - эти объекты я бы не рекомендовал использовать в реальном проекте.
-   Я включил его для примера, чтобы показать, как вы можете использовать потоки.
+* Реализованы Socks5 и Https прокси.
+* Реализована авторизацию через прокси-сервер (socks5 & https).
 
 
 
@@ -47,7 +43,7 @@ $socks5Proxy = new \ImapConnector\Proxies\Socks5Proxy($responseContainer, "ip", 
 $connector->connectToProxy($socks5Proxy);
 
 // Здесь мы получаем поток, который идет через прокси (Вы можете использовать этот поток в своем собственном порядк)
-$stream = $connector->connectToImap("imap_host", 'imap_port');
+$stream = $connector->connectToImap("imap_host", 'imap_port', 'proxy_name', 'proxy_pass');
 
 // Здесь мы проверяем, успешно ли мы подключились к imap
 if(is_resource($stream)) {

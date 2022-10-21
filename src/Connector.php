@@ -90,8 +90,8 @@ class Connector
             $this->stream = $this->proxy->connectToImap($host, $port);
         else
             $this->stream = $this->createStream($this->imapHost, $this->imapPort);
-//        if(is_resource($this->stream))
-//            stream_set_blocking($this->stream, false);
+            // if(is_resource($this->stream))
+            // stream_set_blocking($this->stream, false);
         return $this->stream;
     }
 
@@ -120,7 +120,7 @@ class Connector
     {
         //@todo proxy authentication
         if($this->stream = @stream_socket_client("ssl://{$host}:{$port}", $errno, $errstr, $this->timeOut, STREAM_CLIENT_CONNECT, $this->context)) {
-//            stream_set_timeout($this->stream, $this->timeOut);
+        // stream_set_timeout($this->stream, $this->timeOut);
             return $this->stream;
         }
         $this->responseContainer->setLastErrorText("Failed connection to imap. Without proxy. " . $errstr);
